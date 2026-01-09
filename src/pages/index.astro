@@ -10,7 +10,11 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
 `;
 ---
 
-const soulsText = `
+<Layout title="Welcome to Astro.">
+    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
+    <Markdown content={explainer} class="mb-10 text-lg" />
+    <p>
+
 I. Moves смерти и следов (ядро цикла)
 ☠️ Умереть
 Когда ты погибаешь, не делай бросок.
@@ -1243,13 +1247,7 @@ o	нестабильным
 o	опасным
 o	ближе к концу цикла
 ________________________________________
-`;
----
-
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <Markdown content={soulsText} class="mb-10 text-lg" />
+<p/>
     <p>
         <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
     </p>
